@@ -1,0 +1,14 @@
+D:\workplace\queueManagement\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\workplace\queueManagement\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\workplace\queueManagement\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\workplace\queueManagement\WindowsFormsApplication1\bin\Debug\QueueHelperV1d0.dll
+D:\workplace\queueManagement\WindowsFormsApplication1\bin\Debug\QueueHelperV1d0.pdb
+D:\workplace\queueManagement\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\workplace\queueManagement\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\workplace\queueManagement\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\workplace\queueManagement\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+D:\workplace\queueManagement\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\workplace\queueManagement\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\workplace\queueManagement\WindowsFormsApplication1\bin\Debug\FlexCell.dll
+D:\workplace\queueManagement\WindowsFormsApplication1\bin\Debug\ZhangLogSysV1d0.dll
+D:\workplace\queueManagement\WindowsFormsApplication1\bin\Debug\ZhangLogSysV1d0.pdb
