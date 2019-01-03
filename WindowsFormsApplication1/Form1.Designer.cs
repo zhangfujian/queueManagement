@@ -34,14 +34,14 @@
             // ucDiningTableInfoSetupV1d03
             // 
             this.ucDiningTableInfoSetupV1d03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucDiningTableInfoSetupV1d03.Location = new System.Drawing.Point(12, 10);
+            this.ucDiningTableInfoSetupV1d03.Location = new System.Drawing.Point(435, 12);
             this.ucDiningTableInfoSetupV1d03.Name = "ucDiningTableInfoSetupV1d03";
             this.ucDiningTableInfoSetupV1d03.Size = new System.Drawing.Size(596, 567);
             this.ucDiningTableInfoSetupV1d03.TabIndex = 0;
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(865, 589);
+            this.ClientSize = new System.Drawing.Size(1052, 638);
             this.Controls.Add(this.ucDiningTableInfoSetupV1d03);
             this.Name = "Form1";
             this.ResumeLayout(false);

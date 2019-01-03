@@ -21,3 +21,8 @@ D:\workplace\printer_no_drive_printing\ZhangLogSysV1d0\bin\Debug\ZhangLogSysV1d0
 D:\workplace\printer_no_drive_printing\ZhangLogSysV1d0\obj\Debug\ZhangLogSysV1d0.dll
 D:\workplace\printer_no_drive_printing\ZhangLogSysV1d0\obj\Debug\ZhangLogSysV1d0.pdb
 D:\workplace\printer_no_drive_printing\ZhangLogSysV1d0\obj\Debug\ZhangLogSysV1d0.csprojResolveAssemblyReference.cache
+D:\workplace\queueManagement\ZhangLogSysV1d0\bin\Debug\ZhangLogSysV1d0.dll
+D:\workplace\queueManagement\ZhangLogSysV1d0\bin\Debug\ZhangLogSysV1d0.pdb
+D:\workplace\queueManagement\ZhangLogSysV1d0\obj\Debug\ZhangLogSysV1d0.csprojResolveAssemblyReference.cache
+D:\workplace\queueManagement\ZhangLogSysV1d0\obj\Debug\ZhangLogSysV1d0.dll
+D:\workplace\queueManagement\ZhangLogSysV1d0\obj\Debug\ZhangLogSysV1d0.pdb

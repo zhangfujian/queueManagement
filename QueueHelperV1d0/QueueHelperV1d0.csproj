@@ -47,9 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CateringQueueHelperV1d0.cs" />
+    <Compile Include="Entity\CustomerInfo.cs" />
     <Compile Include="Entity\DiningTable.cs" />
+    <Compile Include="Entity\WaitInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\HotchPotchV1d0.cs" />
+    <Compile Include="Ui\ButtonExV1d0.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ui\ButtonExV1d0.Designer.cs">
+      <DependentUpon>ButtonExV1d0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\QueueInfoDisplayBarV1d0.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ui\QueueInfoDisplayBarV1d0.Designer.cs">
+      <DependentUpon>QueueInfoDisplayBarV1d0.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ui\UCDiningTableInfoSetupV1d0.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -58,6 +72,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ui\ButtonExV1d0.resx">
+      <DependentUpon>ButtonExV1d0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\QueueInfoDisplayBarV1d0.resx">
+      <DependentUpon>QueueInfoDisplayBarV1d0.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ui\UCDiningTableInfoSetupV1d0.resx">
       <DependentUpon>UCDiningTableInfoSetupV1d0.cs</DependentUpon>
     </EmbeddedResource>

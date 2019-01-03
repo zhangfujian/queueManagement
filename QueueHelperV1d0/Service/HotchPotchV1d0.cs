@@ -19,15 +19,22 @@ namespace QueueHelperV1d0.Service
         /// <param name="fileName"></param>
         public static void SaveToXmFile<T>(T printtTempletInfoSet, string fileName)
         {
-            XmlSerializer xSerializer = new XmlSerializer(typeof(T));
-            StreamWriter sW = new StreamWriter(fileName);
             try
             {
-                xSerializer.Serialize(sW, printtTempletInfoSet);
+                XmlSerializer xSerializer = new XmlSerializer(typeof(T));
+                StreamWriter sW = new StreamWriter(fileName);
+                try
+                {
+                    xSerializer.Serialize(sW, printtTempletInfoSet);
+                }
+                finally
+                {
+                    sW.Close();
+                }
             }
-            finally
+            catch (Exception ex)
             {
-                sW.Close();
+                SimpleLoger.Instance.Error(ex);
             }
         }
         /// <summary>

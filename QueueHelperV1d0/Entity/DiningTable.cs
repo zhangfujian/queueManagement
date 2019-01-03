@@ -71,6 +71,8 @@ namespace QueueHelperV1d0.Entity
     [Serializable]
     public class DiningTableInfoV1d0
     {
+        [XmlElement(ElementName = "Id", Type = typeof(Guid))]
+        public Guid Id { get; set; }
         /// <summary>
         /// 编号
         /// </summary>
@@ -113,9 +115,11 @@ namespace QueueHelperV1d0.Entity
             SeatCountMin = 1;
             Status = "Empty";
             Comment = "Empty";
+            Id = Guid.NewGuid();
         }
         public DiningTableInfoV1d0(string no,string place,string type, int seatMin, int seatMax,string status,string remark)
         {
+            Id = Guid.NewGuid();
             No = no;
             Place = place;
             Type = type;
@@ -132,6 +136,8 @@ namespace QueueHelperV1d0.Entity
     [Serializable]
     public class DiningTableTypeV1d0
     {
+        [XmlElement(ElementName = "Id", Type = typeof(Guid))]
+        public Guid Id { get; set; }
         [XmlAttribute("类型")]
         public string Type { get; set; }
         /// <summary>
@@ -144,8 +150,16 @@ namespace QueueHelperV1d0.Entity
         /// </summary>
         [XmlAttribute("最小座位数")]
         public int SeatCountMin { get; set; }
+        public DiningTableTypeV1d0()
+        {
+            Type = "Small";
+            SeatCountMax = 1;
+            SeatCountMin = 1;
+            Id = Guid.NewGuid();
+        }
         public DiningTableTypeV1d0(string type,int seatCountMin,int seatCountMax)
         {
+            Id = Guid.NewGuid();
             Type = type;
             SeatCountMin = seatCountMin;
             SeatCountMax = seatCountMax;

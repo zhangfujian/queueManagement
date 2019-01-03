@@ -1,0 +1,16 @@
+2019-01-02 07:23:51 [Error] 反射类型“QueueHelperV1d0.Entity.DiningTableInfoSetV1d0”时出错。
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   在 System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   在 QueueHelperV1d0.Service.HotchPotchV1d0.SaveToXmFile[T](T printtTempletInfoSet, String fileName) 位置 D:\workplace\QueueManagement\QueueHelperV1d0\Service\HotchPotchV1d0.cs:行号 22
+   在 QueueHelperV1d0.Ui.UCDiningTableInfoSetupV1d0.button5_Click(Object sender, EventArgs e) 位置 D:\workplace\QueueManagement\QueueHelperV1d0\Ui\UCDiningTableInfoSetupV1d0.cs:行号 187
+2019-01-02 07:28:18 [Error] 反射类型“QueueHelperV1d0.Entity.DiningTableInfoSetV1d0”时出错。
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   在 System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   在 QueueHelperV1d0.Service.HotchPotchV1d0.SaveToXmFile[T](T printtTempletInfoSet, String fileName) 位置 D:\workplace\QueueManagement\QueueHelperV1d0\Service\HotchPotchV1d0.cs:行号 22
+   在 QueueHelperV1d0.Ui.UCDiningTableInfoSetupV1d0.button5_Click(Object sender, EventArgs e) 位置 D:\workplace\QueueManagement\QueueHelperV1d0\Ui\UCDiningTableInfoSetupV1d0.cs:行号 187
