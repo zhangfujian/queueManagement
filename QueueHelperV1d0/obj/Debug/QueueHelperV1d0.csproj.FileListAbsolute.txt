@@ -10,3 +10,4 @@ D:\workplace\queueManagement\QueueHelperV1d0\bin\Debug\ZhangLogSysV1d0.dll
 D:\workplace\queueManagement\QueueHelperV1d0\bin\Debug\ZhangLogSysV1d0.pdb
 D:\workplace\queueManagement\QueueHelperV1d0\obj\Debug\QueueHelperV1d0.Ui.ButtonExV1d0.resources
 D:\workplace\QueueManagement\QueueHelperV1d0\obj\Debug\QueueHelperV1d0.Ui.QueueInfoDisplayBarV1d0.resources
+D:\workplace\queueManagement\QueueHelperV1d0\obj\Debug\QueueHelperV1d0.Ui.QueueInfoDisplayBarPanelV1d0.resources

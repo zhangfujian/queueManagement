@@ -1,6 +1,7 @@
 ﻿using CCWin.SkinClass;
 using CCWin.SkinControl;
 using QueueHelperV1d0.Entity;
+using QueueHelperV1d0.Singleton;
 using QueueHelperV1d0.Ui;
 using System;
 using System.Collections.Generic;
@@ -21,8 +22,52 @@ namespace WindowsFormsApplication2
         {
             InitializeComponent();
             CurrWaitInfoList = new List<WaitInfoV1d0>();
+            GetWaitInfoList();
+            DisplayBarPanel.LoadData(CurrWaitInfoList);
+
+
         }
         private List<WaitInfoV1d0> CurrWaitInfoList { get; set; }
+        private void GetWaitInfoList()
+        {
+            CurrWaitInfoList.Add(new WaitInfoV1d0(1, 2, "13488888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(2, 3, "13588888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(3, 4, "13688888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(4, 5, "13788888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(5, 6, "13888888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(6, 7, "13988888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(7, 8, "15188888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(8, 9, "15288888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(9, 8, "15388888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(10, 7, "15488888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(11, 6, "15588888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(12, 5, "15688888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(13, 4, "15788888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(14, 3, "15888888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(15, 2, "15988888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(16, 3, "17188888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(17, 4, "17288888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(18, 5, "17388888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(19, 6, "17488888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(20, 7, "17588888888", DateTime.Now));
+            CurrWaitInfoList.Add(new WaitInfoV1d0(21, 8, "17688888888", DateTime.Now));
+
+            UpdatePanelFilterButton();
+        }
+        private void UpdatePanelFilterButton()
+        {
+            foreach(var item in tableLayoutPanelFilterButton.Controls)
+            {
+                var buttonEx = item as ButtonExV1d0;
+                string[] minMax = buttonEx.Tag.ToString().Split('-');
+                int seatMin = Convert.ToInt32(minMax[0]);
+                int seatMax = Convert.ToInt32(minMax[1]);
+                List<WaitInfoV1d0> DisplayWaitInfo = CurrWaitInfoList.FindAll(x => x.NumberOfMeals >= seatMin && x.NumberOfMeals <= seatMax);
+                if(seatMax!=99) buttonEx.TextEX = buttonEx.Tag.ToString() + "("+ DisplayWaitInfo.Count+ ")";
+                else buttonEx.TextEX = "所有" + "(" + DisplayWaitInfo.Count + ")";
+
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -53,7 +98,18 @@ namespace WindowsFormsApplication2
         {
 
         }
-
+        private void FilterButton_Click(object sender, EventArgs e)
+        {
+            if(sender is ButtonExV1d0)
+            {
+                var buttonEx = sender as ButtonExV1d0;
+                string[] minMax = buttonEx.Tag.ToString().Split('-');
+                int seatMin = Convert.ToInt32(minMax[0]);
+                int seatMax= Convert.ToInt32(minMax[1]);
+                List<WaitInfoV1d0> DisplayWaitInfo = CurrWaitInfoList.FindAll(x => x.NumberOfMeals >= seatMin && x.NumberOfMeals <= seatMax);
+                DisplayBarPanel.LoadData(DisplayWaitInfo);
+            }
+        }
         private void skinButton1_Click(object sender, EventArgs e)
         {
         }
@@ -91,7 +147,13 @@ namespace WindowsFormsApplication2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            FillPanelControls(panelDisplayBar.Controls, 200);
+            
+
+            DisplayBarPanel.LoadData(CurrWaitInfoList);
+            DisplayBarPanel.UpdatePageDisplay(1);
+
+
+            //FillPanelControls(panelDisplayBar.Controls, 200);
             //List<WaitInfoV1d0> waitInfoList = new List<WaitInfoV1d0>();
             //waitInfoList.Add(new WaitInfoV1d0());
             //waitInfoList.Add(new WaitInfoV1d0());
@@ -155,13 +217,38 @@ namespace WindowsFormsApplication2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FillPanelControls(panelDisplayBar.Controls, 9);
+            //FillPanelControls(panelDisplayBar.Controls, 9);
+            //DisplayBarPanel.UpdatePageDisplay(2);
+            var xyz=DiningTableInfoSetSingletonV1d0.Instance.GetDiningTableType(4);
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FillPanelControls(panelDisplayBar.Controls, 5);
+            //FillPanelControls(panelDisplayBar.Controls, 5);
+            DisplayBarPanel.UpdatePageDisplay(3);
+
+        }
+
+        private void DisplayBarPanel_CallEvent(object sender, WaitInfoV1d0 e)
+        {
+            MessageBox.Show("Call");
+        }
+
+        private void DisplayBarPanel_CallConfirmEvent(object sender, WaitInfoV1d0 e)
+        {
+            MessageBox.Show("CallConfirm");
+
+        }
+
+        private void DisplayBarPanel_CallPassEvent(object sender, WaitInfoV1d0 e)
+        {
+            MessageBox.Show("CallPass");
+
+        }
+
+        private void buttonExV1d02_Load(object sender, EventArgs e)
+        {
 
         }
         ///// <summary>

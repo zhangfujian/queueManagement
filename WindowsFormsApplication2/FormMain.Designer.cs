@@ -33,8 +33,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.panelDisplayBar = new System.Windows.Forms.Panel();
+            this.tableLayoutPanelFilterButton = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.button20 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
@@ -43,11 +42,14 @@
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.DisplayBarPanel = new QueueHelperV1d0.Ui.QueueInfoDisplayBarPanelV1d0();
             this.buttonExV1d01 = new QueueHelperV1d0.Ui.ButtonExV1d0();
             this.buttonExV1d06 = new QueueHelperV1d0.Ui.ButtonExV1d0();
             this.buttonExV1d05 = new QueueHelperV1d0.Ui.ButtonExV1d0();
             this.buttonExV1d04 = new QueueHelperV1d0.Ui.ButtonExV1d0();
-            this.buttonExV1d03 = new QueueHelperV1d0.Ui.ButtonExV1d0();
+            this.buttonExAll = new QueueHelperV1d0.Ui.ButtonExV1d0();
             this.buttonExV1d02 = new QueueHelperV1d0.Ui.ButtonExV1d0();
             this.buttonExV1d018 = new QueueHelperV1d0.Ui.ButtonExV1d0();
             this.buttonExV1d017 = new QueueHelperV1d0.Ui.ButtonExV1d0();
@@ -61,11 +63,9 @@
             this.buttonExV1d09 = new QueueHelperV1d0.Ui.ButtonExV1d0();
             this.buttonExV1d08 = new QueueHelperV1d0.Ui.ButtonExV1d0();
             this.buttonExV1d07 = new QueueHelperV1d0.Ui.ButtonExV1d0();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanelFilterButton.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +75,7 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 551);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 566);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1265, 60);
             this.statusStrip1.TabIndex = 1;
@@ -134,36 +134,27 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "就餐人数";
             // 
-            // tableLayoutPanel3
+            // tableLayoutPanelFilterButton
             // 
-            this.tableLayoutPanel3.ColumnCount = 5;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Controls.Add(this.buttonExV1d06, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.buttonExV1d05, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.buttonExV1d04, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.buttonExV1d03, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.buttonExV1d02, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 12);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(913, 57);
-            this.tableLayoutPanel3.TabIndex = 9;
-            // 
-            // panelDisplayBar
-            // 
-            this.panelDisplayBar.AutoScroll = true;
-            this.panelDisplayBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelDisplayBar.Location = new System.Drawing.Point(12, 72);
-            this.panelDisplayBar.Name = "panelDisplayBar";
-            this.panelDisplayBar.Size = new System.Drawing.Size(913, 468);
-            this.panelDisplayBar.TabIndex = 10;
+            this.tableLayoutPanelFilterButton.ColumnCount = 5;
+            this.tableLayoutPanelFilterButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanelFilterButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanelFilterButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanelFilterButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanelFilterButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanelFilterButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelFilterButton.Controls.Add(this.buttonExV1d06, 0, 0);
+            this.tableLayoutPanelFilterButton.Controls.Add(this.buttonExV1d05, 0, 0);
+            this.tableLayoutPanelFilterButton.Controls.Add(this.buttonExV1d04, 0, 0);
+            this.tableLayoutPanelFilterButton.Controls.Add(this.buttonExAll, 0, 0);
+            this.tableLayoutPanelFilterButton.Controls.Add(this.buttonExV1d02, 0, 0);
+            this.tableLayoutPanelFilterButton.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanelFilterButton.Name = "tableLayoutPanelFilterButton";
+            this.tableLayoutPanelFilterButton.RowCount = 1;
+            this.tableLayoutPanelFilterButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelFilterButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanelFilterButton.Size = new System.Drawing.Size(913, 57);
+            this.tableLayoutPanelFilterButton.TabIndex = 9;
             // 
             // tableLayoutPanel4
             // 
@@ -252,6 +243,37 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1017, 517);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "button3";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(1098, 517);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "button4";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // DisplayBarPanel
+            // 
+            this.DisplayBarPanel.Location = new System.Drawing.Point(15, 83);
+            this.DisplayBarPanel.Name = "DisplayBarPanel";
+            this.DisplayBarPanel.PageNo = 0;
+            this.DisplayBarPanel.Size = new System.Drawing.Size(907, 535);
+            this.DisplayBarPanel.TabIndex = 18;
+            this.DisplayBarPanel.CallEvent += new System.EventHandler<QueueHelperV1d0.Entity.WaitInfoV1d0>(this.DisplayBarPanel_CallEvent);
+            this.DisplayBarPanel.CallConfirmEvent += new System.EventHandler<QueueHelperV1d0.Entity.WaitInfoV1d0>(this.DisplayBarPanel_CallConfirmEvent);
+            this.DisplayBarPanel.CallPassEvent += new System.EventHandler<QueueHelperV1d0.Entity.WaitInfoV1d0>(this.DisplayBarPanel_CallPassEvent);
+            // 
             // buttonExV1d01
             // 
             this.buttonExV1d01.BackColorEx = System.Drawing.Color.LightGray;
@@ -276,8 +298,10 @@
             this.buttonExV1d06.Name = "buttonExV1d06";
             this.buttonExV1d06.Size = new System.Drawing.Size(176, 51);
             this.buttonExV1d06.TabIndex = 18;
+            this.buttonExV1d06.Tag = "6-7";
             this.buttonExV1d06.TextColor = System.Drawing.Color.Black;
             this.buttonExV1d06.TextEX = "6-7";
+            this.buttonExV1d06.ButtonClick += new System.EventHandler(this.FilterButton_Click);
             // 
             // buttonExV1d05
             // 
@@ -290,8 +314,10 @@
             this.buttonExV1d05.Name = "buttonExV1d05";
             this.buttonExV1d05.Size = new System.Drawing.Size(179, 51);
             this.buttonExV1d05.TabIndex = 17;
+            this.buttonExV1d05.Tag = "8-9";
             this.buttonExV1d05.TextColor = System.Drawing.Color.Black;
             this.buttonExV1d05.TextEX = "8-9";
+            this.buttonExV1d05.ButtonClick += new System.EventHandler(this.FilterButton_Click);
             // 
             // buttonExV1d04
             // 
@@ -304,22 +330,26 @@
             this.buttonExV1d04.Name = "buttonExV1d04";
             this.buttonExV1d04.Size = new System.Drawing.Size(176, 51);
             this.buttonExV1d04.TabIndex = 16;
+            this.buttonExV1d04.Tag = "3-5";
             this.buttonExV1d04.TextColor = System.Drawing.Color.Black;
             this.buttonExV1d04.TextEX = "3-5";
+            this.buttonExV1d04.ButtonClick += new System.EventHandler(this.FilterButton_Click);
             // 
-            // buttonExV1d03
+            // buttonExAll
             // 
-            this.buttonExV1d03.BackColorEx = System.Drawing.Color.LightGray;
-            this.buttonExV1d03.BorderColor = System.Drawing.Color.Red;
-            this.buttonExV1d03.ClickColorEx = System.Drawing.Color.DodgerBlue;
-            this.buttonExV1d03.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonExV1d03.IsLockClickStatus = true;
-            this.buttonExV1d03.Location = new System.Drawing.Point(3, 3);
-            this.buttonExV1d03.Name = "buttonExV1d03";
-            this.buttonExV1d03.Size = new System.Drawing.Size(176, 51);
-            this.buttonExV1d03.TabIndex = 15;
-            this.buttonExV1d03.TextColor = System.Drawing.Color.Black;
-            this.buttonExV1d03.TextEX = "所有";
+            this.buttonExAll.BackColorEx = System.Drawing.Color.LightGray;
+            this.buttonExAll.BorderColor = System.Drawing.Color.Red;
+            this.buttonExAll.ClickColorEx = System.Drawing.Color.DodgerBlue;
+            this.buttonExAll.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonExAll.IsLockClickStatus = true;
+            this.buttonExAll.Location = new System.Drawing.Point(3, 3);
+            this.buttonExAll.Name = "buttonExAll";
+            this.buttonExAll.Size = new System.Drawing.Size(176, 51);
+            this.buttonExAll.TabIndex = 15;
+            this.buttonExAll.Tag = "0-99";
+            this.buttonExAll.TextColor = System.Drawing.Color.Black;
+            this.buttonExAll.TextEX = "所有";
+            this.buttonExAll.ButtonClick += new System.EventHandler(this.FilterButton_Click);
             // 
             // buttonExV1d02
             // 
@@ -332,8 +362,11 @@
             this.buttonExV1d02.Name = "buttonExV1d02";
             this.buttonExV1d02.Size = new System.Drawing.Size(176, 51);
             this.buttonExV1d02.TabIndex = 14;
+            this.buttonExV1d02.Tag = "1-2";
             this.buttonExV1d02.TextColor = System.Drawing.Color.Black;
             this.buttonExV1d02.TextEX = "1-2";
+            this.buttonExV1d02.ButtonClick += new System.EventHandler(this.FilterButton_Click);
+            this.buttonExV1d02.Load += new System.EventHandler(this.buttonExV1d02_Load);
             // 
             // buttonExV1d018
             // 
@@ -491,48 +524,28 @@
             this.buttonExV1d07.TextColor = System.Drawing.Color.Black;
             this.buttonExV1d07.TextEX = "1";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1017, 517);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "button3";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(1098, 517);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "button4";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1265, 611);
+            this.ClientSize = new System.Drawing.Size(1265, 626);
+            this.Controls.Add(this.DisplayBarPanel);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonExV1d01);
             this.Controls.Add(this.tableLayoutPanel4);
-            this.Controls.Add(this.panelDisplayBar);
-            this.Controls.Add(this.tableLayoutPanel3);
+            this.Controls.Add(this.tableLayoutPanelFilterButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.statusStrip1);
             this.Name = "FormMain";
-            this.Text = "排队管理-2019-1-3";
+            this.Text = "排队管理-2019-1-4";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanelFilterButton.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -544,8 +557,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Panel panelDisplayBar;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelFilterButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
@@ -558,7 +570,7 @@
         private QueueHelperV1d0.Ui.ButtonExV1d0 buttonExV1d06;
         private QueueHelperV1d0.Ui.ButtonExV1d0 buttonExV1d05;
         private QueueHelperV1d0.Ui.ButtonExV1d0 buttonExV1d04;
-        private QueueHelperV1d0.Ui.ButtonExV1d0 buttonExV1d03;
+        private QueueHelperV1d0.Ui.ButtonExV1d0 buttonExAll;
         private QueueHelperV1d0.Ui.ButtonExV1d0 buttonExV1d02;
         private QueueHelperV1d0.Ui.ButtonExV1d0 buttonExV1d018;
         private QueueHelperV1d0.Ui.ButtonExV1d0 buttonExV1d017;
@@ -575,6 +587,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private QueueHelperV1d0.Ui.QueueInfoDisplayBarPanelV1d0 DisplayBarPanel;
     }
 }
 

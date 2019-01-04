@@ -140,6 +140,8 @@ namespace QueueHelperV1d0.Entity
         public Guid Id { get; set; }
         [XmlAttribute("类型")]
         public string Type { get; set; }
+        [XmlAttribute("类型前缀")]
+        public string TypePrefix { get; set; }
         /// <summary>
         /// 最多座位
         /// </summary>
@@ -153,6 +155,7 @@ namespace QueueHelperV1d0.Entity
         public DiningTableTypeV1d0()
         {
             Type = "Small";
+            TypePrefix = "S";
             SeatCountMax = 1;
             SeatCountMin = 1;
             Id = Guid.NewGuid();
@@ -161,6 +164,7 @@ namespace QueueHelperV1d0.Entity
         {
             Id = Guid.NewGuid();
             Type = type;
+            TypePrefix = type.Substring(0, 1);
             SeatCountMin = seatCountMin;
             SeatCountMax = seatCountMax;
         }

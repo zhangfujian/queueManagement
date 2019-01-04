@@ -20,6 +20,7 @@ namespace QueueHelperV1d0.Ui
         {
             InitializeComponent();
             DiningTableInfoSet = new DiningTableInfoSetV1d0();
+            Init();
         }
         private DiningTableInfoSetV1d0 DiningTableInfoSet { get; set; }
         public void Init()
@@ -38,23 +39,26 @@ namespace QueueHelperV1d0.Ui
 
                 gridInfoSet.AutoRedraw = false;  // 禁止刷新表格
                 gridInfoSet.Refresh();
-                gridInfoSet.Cols = 5;
+                gridInfoSet.Cols = 6;
                 gridInfoSet.Rows = rowCount + 1;
                 gridInfoSet.Cell(0, 1).Text = "桌台类型";
-                gridInfoSet.Cell(0, 2).Text = "座位数下限";
-                gridInfoSet.Cell(0, 3).Text = "座位数上限";
-                gridInfoSet.Cell(0, 4).Text = "桌台个数";
+                gridInfoSet.Cell(0, 2).Text = "类型前缀";
+                gridInfoSet.Cell(0, 3).Text = "座位数下限";
+                gridInfoSet.Cell(0, 4).Text = "座位数上限";
+                gridInfoSet.Cell(0, 5).Text = "桌台个数";
                 gridInfoSet.Column(1).CellType = FlexCell.CellTypeEnum.TextBox;
                 gridInfoSet.Column(2).CellType = FlexCell.CellTypeEnum.TextBox;
                 gridInfoSet.Column(3).CellType = FlexCell.CellTypeEnum.TextBox;
                 gridInfoSet.Column(4).CellType = FlexCell.CellTypeEnum.TextBox;
+                gridInfoSet.Column(5).CellType = FlexCell.CellTypeEnum.TextBox;
 
                 for (int i = 0; i < rowCount; i++)
                 {
                     gridInfoSet.Cell(i + 1, 1).Text = typeList[i].Type;
-                    gridInfoSet.Cell(i + 1, 2).Text = typeList[i].SeatCountMin.ToString();
-                    gridInfoSet.Cell(i + 1, 3).Text = typeList[i].SeatCountMax.ToString();
-                    gridInfoSet.Cell(i + 1, 4).Text = DiningTableInfoSet.DiningTableInfoList.FindAll(x => x.Type == typeList[i].Type).Count().ToString();
+                    gridInfoSet.Cell(i + 1, 2).Text = typeList[i].TypePrefix;
+                    gridInfoSet.Cell(i + 1, 3).Text = typeList[i].SeatCountMin.ToString();
+                    gridInfoSet.Cell(i + 1, 4).Text = typeList[i].SeatCountMax.ToString();
+                    gridInfoSet.Cell(i + 1, 5).Text = DiningTableInfoSet.DiningTableInfoList.FindAll(x => x.Type == typeList[i].Type).Count().ToString();
                 }
                 gridInfoSet.AutoRedraw = true;
                 gridInfoSet.Refresh();

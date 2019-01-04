@@ -1,6 +1,3 @@
-D:\workplace\QueueManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
-D:\workplace\QueueManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
-D:\workplace\QueueManagement\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
 D:\workplace\QueueManagement\WindowsFormsApplication2\bin\Debug\CSkin.dll
 D:\workplace\QueueManagement\WindowsFormsApplication2\bin\Debug\FlexCell.dll
 D:\workplace\QueueManagement\WindowsFormsApplication2\bin\Debug\QueueHelperV1d0.dll
@@ -10,7 +7,11 @@ D:\workplace\QueueManagement\WindowsFormsApplication2\bin\Debug\CSkin.xml
 D:\workplace\QueueManagement\WindowsFormsApplication2\bin\Debug\ZhangLogSysV1d0.pdb
 D:\workplace\QueueManagement\WindowsFormsApplication2\obj\Debug\QueueManageSystem.csprojResolveAssemblyReference.cache
 D:\workplace\QueueManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.FormMain.resources
-D:\workplace\QueueManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 D:\workplace\QueueManagement\WindowsFormsApplication2\obj\Debug\QueueManageSystem.csproj.GenerateResource.Cache
-D:\workplace\QueueManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
-D:\workplace\QueueManagement\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+D:\workplace\queueManagement\WindowsFormsApplication2\bin\Debug\QueueManageSystem.exe.config
+D:\workplace\queueManagement\WindowsFormsApplication2\bin\Debug\QueueManageSystem.exe
+D:\workplace\queueManagement\WindowsFormsApplication2\bin\Debug\QueueManageSystem.pdb
+D:\workplace\queueManagement\WindowsFormsApplication2\obj\Debug\QueueManageSystem.Properties.Resources.resources
+D:\workplace\queueManagement\WindowsFormsApplication2\obj\Debug\QueueManageSystem.exe
+D:\workplace\queueManagement\WindowsFormsApplication2\obj\Debug\QueueManageSystem.pdb
+D:\workplace\queueManagement\WindowsFormsApplication2\bin\Debug\Parameter\DiningTableInfoSet.xml

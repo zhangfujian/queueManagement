@@ -29,20 +29,22 @@ namespace QueueHelperV1d0.Ui
         public int DisplayIndex { get; set; }
         private void QueueInfoDisplayBarV1d0_Load(object sender, EventArgs e)
         {
-            Init();
+            Init(null);
         }
         public event EventHandler<WaitInfoV1d0> CallEvent;
         public event EventHandler<WaitInfoV1d0> CallConfirmEvent;
         public event EventHandler<WaitInfoV1d0> CallPassEvent;
-        private void Init()
-        {
-            if (WaitInfo != null)
+        public void Init(WaitInfoV1d0 waitInfo)
+        {            
+            if (waitInfo != null)
             {
+                WaitInfo = waitInfo;
                 labelCallNo.Text = WaitInfo.CallNo;
                 labelTelephone.Text = WaitInfo.CustomerTelephone;
                 labelNumberOfMeals.Text = WaitInfo.NumberOfMeals.ToString();
                 TimeSpan tSpan = DateTime.Now.Subtract(WaitInfo.TakeTime);
                 labelWaitMinute.Text = tSpan.Minutes.ToString();
+                labelDisplayIndex.Text = DisplayIndex.ToString();
             }
         }
 

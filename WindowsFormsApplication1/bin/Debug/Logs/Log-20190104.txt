@@ -1,0 +1,4 @@
+2019-01-04 21:34:28 [Error] 未将对象引用设置到对象的实例。
+   在 QueueHelperV1d0.Ui.UCDiningTableInfoSetupV1d0.InitDataGridViewInfoSet() 位置 D:\workplace\queueManagement\QueueHelperV1d0\Ui\UCDiningTableInfoSetupV1d0.cs:行号 48
+2019-01-04 21:34:29 [Error] 未将对象引用设置到对象的实例。
+   在 QueueHelperV1d0.Ui.UCDiningTableInfoSetupV1d0.InitDataGridViewInfoSet() 位置 D:\workplace\queueManagement\QueueHelperV1d0\Ui\UCDiningTableInfoSetupV1d0.cs:行号 48

@@ -109,22 +109,23 @@ namespace QueueHelperV1d0.Ui
                 //将延时回复按钮颜色的方法放入线程池执行
                 ThreadPool.QueueUserWorkItem(RestoreClickedStatus, sender);
             }
+            IsClicked = !isClickedLast;
+            labelText.Refresh();
             if (!IsLockClickStatus)
             {
                 if (ButtonClick != null)
                 {
-                    ButtonClick(sender, e);
+                    ButtonClick(this, e);
                 }
             }
             else
             {
-                if (ButtonClick != null&& !isClickedLast)
+                if (ButtonClick != null && !isClickedLast)
                 {
-                    ButtonClick(sender, e);
+                    ButtonClick(this, e);
                 }
             }
-            IsClicked = !isClickedLast;
-            labelText.Refresh();
+            
         }
 
         private void labelText_Paint(object sender, PaintEventArgs e)
@@ -147,8 +148,8 @@ namespace QueueHelperV1d0.Ui
         /// <param name="item"></param>
         private void RestoreClickedStatus(object item)
         {
-            Thread.Sleep(400);
-            BeginInvoke(new Action(() => { IsClicked = false; this.Invalidate(true); this.Update(); }));
+           Thread.Sleep(200);
+           BeginInvoke(new Action(() => { IsClicked = false; this.Invalidate(true); this.Update(); }));
         }
     }
 }

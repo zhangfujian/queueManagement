@@ -11,7 +11,8 @@ namespace QueueHelperV1d0.Entity
     /// </summary>
     public class WaitInfoV1d0
     {
-        public Guid Id { get; set;}
+        public Guid Id { get; set; }
+        public int CallSn{get;set;}
         public string CallNo { get; set; }// 叫號
         /// <summary>
         /// 顾客id
@@ -37,17 +38,19 @@ namespace QueueHelperV1d0.Entity
         {
             Id = Guid.NewGuid();
             NumberOfMeals = 6;
+            CallSn = 0;
             CallNo = "000";
             CustomerId= Guid.NewGuid();
             CustomerTelephone = "13500000000";
             TakeTime = DateTime.Now;
             Status = 0;
         }
-        public WaitInfoV1d0(string callNo,int numberOfMeals,string customerTelephone,DateTime takeTime)
+        public WaitInfoV1d0(int callSn,int numberOfMeals,string customerTelephone,DateTime takeTime)
         {
+            CallSn = 0;
             Id = Guid.NewGuid();
             NumberOfMeals = numberOfMeals;
-            CallNo = callNo;
+            CallNo = callSn.ToString("#000");
             CustomerId = Guid.NewGuid();
             CustomerTelephone = customerTelephone;
             TakeTime = takeTime;

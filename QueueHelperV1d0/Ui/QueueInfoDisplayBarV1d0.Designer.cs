@@ -38,6 +38,7 @@
             this.buttonCallConfirm = new QueueHelperV1d0.Ui.ButtonExV1d0();
             this.buttonCallPass = new QueueHelperV1d0.Ui.ButtonExV1d0();
             this.buttonMenu = new QueueHelperV1d0.Ui.ButtonExV1d0();
+            this.labelDisplayIndex = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -45,26 +46,28 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel1.ColumnCount = 7;
+            this.tableLayoutPanel1.ColumnCount = 8;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Controls.Add(this.labelTelephone, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.labelCallNo, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.buttonCall, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.buttonCallConfirm, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.buttonCallPass, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.buttonMenu, 6, 0);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.Controls.Add(this.labelTelephone, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.labelCallNo, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.buttonCall, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.buttonCallConfirm, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.buttonCallPass, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.buttonMenu, 7, 0);
+            this.tableLayoutPanel1.Controls.Add(this.labelDisplayIndex, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(848, 100);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -72,10 +75,10 @@
             // 
             this.labelTelephone.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelTelephone.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTelephone.Location = new System.Drawing.Point(130, 3);
+            this.labelTelephone.Location = new System.Drawing.Point(213, 3);
             this.labelTelephone.Margin = new System.Windows.Forms.Padding(2);
             this.labelTelephone.Name = "labelTelephone";
-            this.labelTelephone.Size = new System.Drawing.Size(248, 94);
+            this.labelTelephone.Size = new System.Drawing.Size(205, 94);
             this.labelTelephone.TabIndex = 1;
             this.labelTelephone.Text = "电话";
             this.labelTelephone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,10 +88,10 @@
             this.labelCallNo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelCallNo.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelCallNo.ForeColor = System.Drawing.Color.Red;
-            this.labelCallNo.Location = new System.Drawing.Point(3, 3);
+            this.labelCallNo.Location = new System.Drawing.Point(87, 3);
             this.labelCallNo.Margin = new System.Windows.Forms.Padding(2);
             this.labelCallNo.Name = "labelCallNo";
-            this.labelCallNo.Size = new System.Drawing.Size(122, 94);
+            this.labelCallNo.Size = new System.Drawing.Size(121, 94);
             this.labelCallNo.TabIndex = 0;
             this.labelCallNo.Text = "序号";
             this.labelCallNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -100,7 +103,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.labelWaitMinute, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.labelNumberOfMeals, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(384, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(424, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -140,9 +143,9 @@
             this.buttonCall.ClickColorEx = System.Drawing.Color.LightGray;
             this.buttonCall.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonCall.IsLockClickStatus = false;
-            this.buttonCall.Location = new System.Drawing.Point(511, 4);
+            this.buttonCall.Location = new System.Drawing.Point(550, 4);
             this.buttonCall.Name = "buttonCall";
-            this.buttonCall.Size = new System.Drawing.Size(78, 92);
+            this.buttonCall.Size = new System.Drawing.Size(77, 92);
             this.buttonCall.TabIndex = 3;
             this.buttonCall.TextColor = System.Drawing.Color.Black;
             this.buttonCall.TextEX = "呼叫";
@@ -155,9 +158,9 @@
             this.buttonCallConfirm.ClickColorEx = System.Drawing.Color.LightGray;
             this.buttonCallConfirm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonCallConfirm.IsLockClickStatus = false;
-            this.buttonCallConfirm.Location = new System.Drawing.Point(596, 4);
+            this.buttonCallConfirm.Location = new System.Drawing.Point(634, 4);
             this.buttonCallConfirm.Name = "buttonCallConfirm";
-            this.buttonCallConfirm.Size = new System.Drawing.Size(78, 92);
+            this.buttonCallConfirm.Size = new System.Drawing.Size(77, 92);
             this.buttonCallConfirm.TabIndex = 4;
             this.buttonCallConfirm.TextColor = System.Drawing.Color.Black;
             this.buttonCallConfirm.TextEX = "就餐";
@@ -170,9 +173,9 @@
             this.buttonCallPass.ClickColorEx = System.Drawing.Color.LightGray;
             this.buttonCallPass.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonCallPass.IsLockClickStatus = false;
-            this.buttonCallPass.Location = new System.Drawing.Point(681, 4);
+            this.buttonCallPass.Location = new System.Drawing.Point(718, 4);
             this.buttonCallPass.Name = "buttonCallPass";
-            this.buttonCallPass.Size = new System.Drawing.Size(78, 92);
+            this.buttonCallPass.Size = new System.Drawing.Size(77, 92);
             this.buttonCallPass.TabIndex = 5;
             this.buttonCallPass.TextColor = System.Drawing.Color.Black;
             this.buttonCallPass.TextEX = "过号";
@@ -185,12 +188,22 @@
             this.buttonMenu.ClickColorEx = System.Drawing.Color.DodgerBlue;
             this.buttonMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonMenu.IsLockClickStatus = false;
-            this.buttonMenu.Location = new System.Drawing.Point(766, 4);
+            this.buttonMenu.Location = new System.Drawing.Point(802, 4);
             this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(78, 92);
+            this.buttonMenu.Size = new System.Drawing.Size(42, 92);
             this.buttonMenu.TabIndex = 6;
             this.buttonMenu.TextColor = System.Drawing.Color.Black;
             this.buttonMenu.TextEX = "...";
+            // 
+            // labelDisplayIndex
+            // 
+            this.labelDisplayIndex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelDisplayIndex.Location = new System.Drawing.Point(4, 1);
+            this.labelDisplayIndex.Name = "labelDisplayIndex";
+            this.labelDisplayIndex.Size = new System.Drawing.Size(77, 98);
+            this.labelDisplayIndex.TabIndex = 7;
+            this.labelDisplayIndex.Text = "label1";
+            this.labelDisplayIndex.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // QueueInfoDisplayBarV1d0
             // 
@@ -218,5 +231,6 @@
         private ButtonExV1d0 buttonMenu;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label labelDisplayIndex;
     }
 }
