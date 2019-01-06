@@ -1,0 +1,11 @@
+D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\DriverPrintTest.exe.config
+D:\workplace\QueueManagement\DriverPrintTest\obj\Debug\DriverPrintTest.csprojResolveAssemblyReference.cache
+D:\workplace\QueueManagement\DriverPrintTest\obj\Debug\DriverPrintTest.Form1.resources
+D:\workplace\QueueManagement\DriverPrintTest\obj\Debug\DriverPrintTest.Properties.Resources.resources
+D:\workplace\QueueManagement\DriverPrintTest\obj\Debug\DriverPrintTest.csproj.GenerateResource.Cache
+D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\DriverPrintTest.exe
+D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\DriverPrintTest.pdb
+D:\workplace\QueueManagement\DriverPrintTest\obj\Debug\DriverPrintTest.exe
+D:\workplace\QueueManagement\DriverPrintTest\obj\Debug\DriverPrintTest.pdb
+D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\PrintUsingPrinterDriverHelperV1d0.dll
+D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\PrintUsingPrinterDriverHelperV1d0.pdb

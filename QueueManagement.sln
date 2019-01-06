@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhangLogSysV1d0", "ZhangLog
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueManageSystem", "WindowsFormsApplication2\QueueManageSystem.csproj", "{791B53C4-C1C5-444D-BE28-5FF756598B8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriverPrintTest", "DriverPrintTest\DriverPrintTest.csproj", "{C9C4C1A2-2C5B-408D-B94B-63C09E5567D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintUsingPrinterDriverHelperV1d0", "PrintUsingPrinterDriverHelperV1d0\PrintUsingPrinterDriverHelperV1d0.csproj", "{418876B4-EE8E-4246-B7CF-20BEE75D92E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{791B53C4-C1C5-444D-BE28-5FF756598B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{791B53C4-C1C5-444D-BE28-5FF756598B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{791B53C4-C1C5-444D-BE28-5FF756598B8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9C4C1A2-2C5B-408D-B94B-63C09E5567D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9C4C1A2-2C5B-408D-B94B-63C09E5567D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9C4C1A2-2C5B-408D-B94B-63C09E5567D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9C4C1A2-2C5B-408D-B94B-63C09E5567D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{418876B4-EE8E-4246-B7CF-20BEE75D92E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418876B4-EE8E-4246-B7CF-20BEE75D92E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418876B4-EE8E-4246-B7CF-20BEE75D92E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418876B4-EE8E-4246-B7CF-20BEE75D92E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
