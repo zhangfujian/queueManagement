@@ -9,3 +9,8 @@ D:\workplace\QueueManagement\DriverPrintTest\obj\Debug\DriverPrintTest.exe
 D:\workplace\QueueManagement\DriverPrintTest\obj\Debug\DriverPrintTest.pdb
 D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\PrintUsingPrinterDriverHelperV1d0.dll
 D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\PrintUsingPrinterDriverHelperV1d0.pdb
+D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\QueueHelperV1d0.dll
+D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\FlexCell.dll
+D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\ZhangLogSysV1d0.dll
+D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\QueueHelperV1d0.pdb
+D:\workplace\QueueManagement\DriverPrintTest\bin\Debug\ZhangLogSysV1d0.pdb

@@ -1,4 +1,5 @@
 ﻿using PrintUsingPrinterDriverHelperV1d0.Entity;
+using QueueHelperV1d0.Entity;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -58,6 +59,7 @@ namespace PrintUsingPrinterDriverHelperV1d0.Service
         #region eventHandler
         void PrintPageDetails(object sender, PrintPageEventArgs e)
         {
+            ///遍历待打印方法
             foreach (var item in _printActions)
             {
                 item(e.Graphics);
@@ -174,7 +176,29 @@ namespace PrintUsingPrinterDriverHelperV1d0.Service
             }
             return builder.ToString();
         }
+        #endregion
+        #region 排队小票打印相关
+        public void PrintWaitInfoTicket(WaitInfoV1d0 waitInfo,string diningRoomName)
+        {
+            string lineString = string.Format("餐厅：{0}", diningRoomName);
+            PrintText(lineString,FontSize.Large);
+            NewRow();
+            lineString = string.Format("您的号码：{0}", waitInfo.CallNo);
+            PrintText(lineString, FontSize.Large);
+            NewRow();
+            PrintLine();
+            NewRow();
+            lineString = string.Format("人数:", waitInfo.NumberOfMeals);
+            PrintText(lineString, FontSize.Large);
+            NewRow();
+            lineString = string.Format("您前面还有{0}桌在等候", waitInfo.CountWaitedAhead);
+            PrintText(lineString, FontSize.Large);
+            NewRow();
+            lineString = string.Format("取号时间:{0}", waitInfo.TakeTime.ToString("yyyyMMdd hh:mm"));
+            PrintText(lineString, FontSize.Large);
+            Finish();
 
+        }
         #endregion
     }
 }

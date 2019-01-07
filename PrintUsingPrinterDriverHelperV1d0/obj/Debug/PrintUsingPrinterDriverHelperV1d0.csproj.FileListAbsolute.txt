@@ -2,3 +2,9 @@ D:\workplace\QueueManagement\PrintUsingPrinterDriverHelperV1d0\bin\Debug\PrintUs
 D:\workplace\QueueManagement\PrintUsingPrinterDriverHelperV1d0\bin\Debug\PrintUsingPrinterDriverHelperV1d0.pdb
 D:\workplace\QueueManagement\PrintUsingPrinterDriverHelperV1d0\obj\Debug\PrintUsingPrinterDriverHelperV1d0.dll
 D:\workplace\QueueManagement\PrintUsingPrinterDriverHelperV1d0\obj\Debug\PrintUsingPrinterDriverHelperV1d0.pdb
+D:\workplace\QueueManagement\PrintUsingPrinterDriverHelperV1d0\bin\Debug\QueueHelperV1d0.dll
+D:\workplace\QueueManagement\PrintUsingPrinterDriverHelperV1d0\bin\Debug\FlexCell.dll
+D:\workplace\QueueManagement\PrintUsingPrinterDriverHelperV1d0\bin\Debug\ZhangLogSysV1d0.dll
+D:\workplace\QueueManagement\PrintUsingPrinterDriverHelperV1d0\bin\Debug\QueueHelperV1d0.pdb
+D:\workplace\QueueManagement\PrintUsingPrinterDriverHelperV1d0\bin\Debug\ZhangLogSysV1d0.pdb
+D:\workplace\QueueManagement\PrintUsingPrinterDriverHelperV1d0\obj\Debug\PrintUsingPrinterDriverHelperV1d0.csprojResolveAssemblyReference.cache

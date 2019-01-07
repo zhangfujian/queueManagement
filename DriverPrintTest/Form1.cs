@@ -1,5 +1,6 @@
 ﻿using PrintUsingPrinterDriverHelperV1d0.Entity;
 using PrintUsingPrinterDriverHelperV1d0.Service;
+using QueueHelperV1d0.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -156,26 +157,28 @@ namespace DriverPrintTest
 
         private void button5_Click(object sender, EventArgs e)
         {
-            StringBuilder sw = new StringBuilder();
-            sw.Append("       S0011234567892asdfghj");
-            sw.Append("订单编号1：" );
-            sw.Append("订单编号2：" );
-            sw.Append("订单编号3：" );
-            sw.Append("订单编号4：" );
+            // StringBuilder sw = new StringBuilder();
+            // sw.Append("       S0011234567892asdfghj");
+            // sw.Append("订单编号1：" );
+            // sw.Append("订单编号2：" );
+            // sw.Append("订单编号3：" );
+            // sw.Append("订单编号4：" );
 
             printDocument = new PrintDocument();
             string printerName = printDocument.PrinterSettings.PrinterName;
             var currPrinter = PrinterFactory.GetPrinter("printerName", PaperWidth.Paper76mm);
-            currPrinter.PrintText("排队序号S001");
-            currPrinter.NewRow();
-            currPrinter.PrintText("序号：");
-            currPrinter.NewRow();
-            currPrinter.PrintText("前面还有00位");
-            currPrinter.NewRow();
-            currPrinter.PrintText("排队时间：" + DateTime.Now.ToString("yyyyMMdd hh:mm:ss"));
-           // currPrinter.PrintLine();
-            //currPrinter.Finish();
-            currPrinter.Finish();
+            currPrinter.PrintWaitInfoTicket(new WaitInfoV1d0(),"测试餐厅");
+            //currPrinter.PrintText("排队序号S001");
+            // currPrinter.NewRow();
+            // currPrinter.PrintText("序号：");
+            // currPrinter.NewRow();
+            // currPrinter.PrintText("前面还有00位");
+            // currPrinter.NewRow();
+            // currPrinter.PrintText("排队时间：" + DateTime.Now.ToString("yyyyMMdd hh:mm:ss"));
+            //// currPrinter.PrintLine();
+            // //currPrinter.Finish();
+            // currPrinter.Finish();
+
         }
     }
 }

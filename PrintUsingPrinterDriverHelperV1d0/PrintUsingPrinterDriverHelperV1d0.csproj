@@ -49,6 +49,12 @@
     <Compile Include="Service\Printer.cs" />
     <Compile Include="Service\PrinterFactory.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QueueHelperV1d0\QueueHelperV1d0.csproj">
+      <Project>{11E51CE4-2F92-471F-9741-6159F0D903AF}</Project>
+      <Name>QueueHelperV1d0</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
